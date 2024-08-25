@@ -26,14 +26,14 @@ install_package neovim
 
 # Clone your Neovim configuration from GitHub
 # Replace <your-nvim-repo-url> with your actual GitHub repository URL
-git clone <your-nvim-repo-url >~/.config/nvim
+git clone https://github.com/ammarrqureshi/nvim-config.git ~/.config/nvim
 
 # Install tmux
 install_package tmux
 
 # Clone the tmux.conf file from GitHub and copy it to /etc
 # Replace <your-tmux-repo-url> with your actual GitHub repository URL
-git clone <your-tmux-repo-url >~/tmux-config
+git clone https://github.com/ammarrqureshi/tmux-conf.git ~/tmux-config
 if [ "$(uname)" == "Darwin" ]; then
   sudo cp ~/tmux-config/tmux.conf /usr/local/etc/tmux.conf
 else
